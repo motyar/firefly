@@ -90,6 +90,11 @@ $.firefly.fly = function(sp) {
   }, (($.firefly.random(10) + 5) * 2000),function(){  $.firefly.fly(sp) } );
 };
 
+$.firefly.stop = function(sp) {
+  $(sp).stop();
+};
+
+
 $.firefly.preloadImages = function() {
 	var preloads = new Object();
 	for (i = 0; i < ($.firefly.settings.images).length; i++){  
