@@ -70,7 +70,7 @@
 	 $.firefly.create = function(img){
 					spark = $('<img>').attr({'src' : img}).hide();
 					
-					 $("#header").append(spark);
+					 $($.firefly.settings.on).append(spark);
 							return spark.css({
 								            'position':'absolute',
 												
