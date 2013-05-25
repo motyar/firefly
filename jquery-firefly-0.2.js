@@ -38,7 +38,7 @@
 			$.firefly.settings = $.extend({}, defaults, settings);
 			$.firefly.eleHeight = $($.firefly.settings.on).height();
 			$.firefly.eleWidth = $($.firefly.settings.on).width();
-			if($.firefly.settings.on!='document.body'){
+			if($.firefly.settings.on!=='document.body'){
 				var off = $($.firefly.settings.on).offset();
 				$.firefly.offsetTop = off.top;
 				$.firefly.offsetLeft = off.left;
@@ -70,7 +70,7 @@
 	 $.firefly.create = function(img){
 					spark = $('<img>').attr({'src' : img}).hide();
 					
-					 $("#header").append(spark);
+					 $($.firefly.settings.on).append(spark);
 							return spark.css({
 								            'position':'absolute',
 												
