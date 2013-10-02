@@ -24,16 +24,21 @@
 	 * Plugin defaults 
 	 */
 	var defaults = {
+			// location of spark images.
+			// interesting thing to note and try out here is , if I change these images I can change the firefly itself.
+			// puting this as issue, Need to try this out. 
 			images : ['http://dharmmotyar.googlecode.com/svn/trunk/images/spark.png', 'http://dharmmotyar.googlecode.com/svn/trunk/images//spark2.png',
 			'http://dharmmotyar.googlecode.com/svn/trunk/images/spark3.png', 'http://dharmmotyar.googlecode.com/svn/trunk/images/spark4.png'],
+			// default number of fireflies
 			total : 10,
 			ofTop: 0,
 			ofLeft: 0,
+			// target - the body of the loaded document
 			on:'document.body'
 
 	};
 	
-
+	
 	$.firefly = function(settings) {
 			$.firefly.settings = $.extend({}, defaults, settings);
 			$.firefly.eleHeight = $($.firefly.settings.on).height();
