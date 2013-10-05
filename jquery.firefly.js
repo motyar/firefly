@@ -8,6 +8,7 @@
 */
 (function($) {
 
+	// sparks images
 	/* Plugin defaults */
 	var defaults = {
 		images : [
@@ -19,14 +20,17 @@
 	};
 	
 	$.firefly = function(settings) {
+		// allow users to extend settings
 		$.firefly.settings = $.extend({}, defaults, settings);
 			if($.firefly.preloadImages()){
 				for (i = 0; i < $.firefly.settings.total; i++){
+					// randomly select $.firefly.settings.total images from the ones mentioned in the images array
 					$.firefly.fly($.firefly.create($.firefly.settings.images[$.firefly.random(($.firefly.settings.images).length)]));
 				}
 			}
 		return;
 	};
+	
 	
 	/* Public Functions */
 	$.firefly.create = function(img){
