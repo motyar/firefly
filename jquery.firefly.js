@@ -46,7 +46,7 @@
 		$(sp).animate({
 			top: $.firefly.random(($(window).height()-150 )),	//offsets
 			left: $.firefly.random(($(window).width()- 150 )),
-			opacity: Math.random() 		
+			opacity: $.firefly.opacity() 		
 			},
 		
 		(($.firefly.random(10) + 5) * 1100 ),
@@ -66,6 +66,15 @@
 		return Math.ceil(Math.random() * max) - 1;
 	}
 	
+	$.firefly.opacity = function()
+	{
+		op = Math.random();
+		if(op < .2)
+			return 0;
+		else
+			return 1;
+	}
+
 	// let values of opacity range from 0 to val and random.
 	})(jQuery);
 	

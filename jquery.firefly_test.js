@@ -46,7 +46,7 @@
 		$(sp).animate({
 			top: $.firefly.random(($(window).height()-150 )),	//offsets
 			left: $.firefly.random(($(window).width()- 150 )),
-			opacity: Math.random() 		
+			opacity: Math.random()		
 			},
 		
 		(($.firefly.random(10) + 5) * 1100 ),
