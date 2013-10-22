@@ -118,4 +118,3 @@ $.firefly.opacity = function(min)
                 return 1;
 }		
 })(jQuery);
-$.firefly();
