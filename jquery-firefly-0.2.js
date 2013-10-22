@@ -29,12 +29,11 @@
 			total : 10,
 			ofTop: 0,
 			ofLeft: 0,
-			on:'document.body'
-
+			on:'document.body',
+			twinkle: 0.2
 	};
-	
-
 	$.firefly = function(settings) {
+
 			$.firefly.settings = $.extend({}, defaults, settings);
 			$.firefly.eleHeight = $($.firefly.settings.on).height();
 			$.firefly.eleWidth = $($.firefly.settings.on).width();
@@ -69,7 +68,9 @@
 
 	 $.firefly.create = function(img){
 					spark = $('<img>').attr({'src' : img}).hide();
-					
+					if($.firefly.settings.on === 'document.body')
+					 $(document.body).append(spark);
+					 else
 					 $($.firefly.settings.on).append(spark);
 							return spark.css({
 								            'position':'absolute',
@@ -86,7 +87,8 @@ $.firefly.fly = function(sp) {
 	
   $(sp).animate({
 	  top: $.firefly.offsetTop + $.firefly.random(($.firefly.eleHeight-50)),	//offsets
-	  left: $.firefly.offsetLeft + $.firefly.random(($.firefly.eleWidth-50))
+	  left: $.firefly.offsetLeft + $.firefly.random(($.firefly.eleWidth-50)),
+	  opacity: $.firefly.opacity($.firefly.settings.twinkle)
   }, (($.firefly.random(10) + 5) * 2000),function(){  $.firefly.fly(sp) } );
 };
 
@@ -106,6 +108,14 @@ $.firefly.preloadImages = function() {
 $.firefly.random = function(max) {
 	return Math.ceil(Math.random() * max) - 1;
 }
-		
+// set twinkle.
+$.firefly.opacity = function(min)
+{
+        op= Math.random();
+        if(op < min)
+                return 0;
+        else
+                return 1;
+}		
 })(jQuery);
-
+$.firefly();
