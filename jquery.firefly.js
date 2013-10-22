@@ -43,7 +43,8 @@
 $.firefly.fly = function(sp) {
 	$(sp).animate({
 		top: $.firefly.random(($(window).height()-150)),	//offsets
-		left: $.firefly.random(($(window).width()-150))
+		left: $.firefly.random(($(window).width()-150)),
+		opacity: $.firefly.opacity() 		
 	}, (($.firefly.random(10) + 5) * 1100),function(){ $.firefly.fly(sp) } );
 };
 
@@ -57,6 +58,14 @@ $.firefly.preloadImages = function() {
 
 $.firefly.random = function(max) {
 	return Math.ceil(Math.random() * max) - 1;
+}
+$.firefly.opacity = function()
+{
+	op = Math.random();
+	if(op < .2)
+		return 0;
+	else
+		return 1;
 }
 
 })(jQuery);
