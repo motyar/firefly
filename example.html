@@ -14,7 +14,13 @@ height:300px;
 	<script type="text/javascript" src="https://raw.github.com/motyar/firefly/master/jquery-firefly-0.2.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-	$.firefly(); 	
+	$.firefly({
+	color: '#fff',
+	minPixel: 1,
+	maxPixel: 3,
+	total : 65,
+	on: 'header'
+});	
 });
 	</script>
 </head>
