@@ -3,7 +3,13 @@ JQuery Firefly is a simple to use JQuery plugin that adds basic firefly function
 
 ## Changelog
 
-0.3 Improvments:
+0.7 Improvements:
+- Mainly formatting updates
+  * Added comments to mostly everything in the main file
+  * Added documentation to all of the functions
+- Fixed #12
+
+0.3 Improvements:
 - The plugin no longer uses images for sparks (should load faster and gives the freedom to change the color without modifying the image)
 - properties minPixel and maxPixel used to specify the min and max size of the fireflies
 - color property used to specify the color of the fireflies
