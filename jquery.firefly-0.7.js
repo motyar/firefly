@@ -1,5 +1,5 @@
 /*
- * jQuery firefly plugin 0.5
+ * jQuery firefly plugin 0.7
  *
  *
  * Copyright (c) 2010 Dharmveer Motyar
