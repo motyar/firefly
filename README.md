@@ -1,22 +1,29 @@
-# Basic example of v0.6 is [here][1]
+# Jquery Firefly
+JQuery Firefly is a simple to use JQuery plugin that adds basic firefly functionality. Simply load it, and add a couple lines of code, and you have a working firefly effect.
+
+## Changelog
 
 0.3 Improvments:
 - The plugin no longer uses images for sparks (should load faster and gives the freedom to change the color without modifying the image)
 - properties minPixel and maxPixel used to specify the min and max size of the fireflies
 - color property used to specify the color of the fireflies
 
-Example:
+# Usage
 
+Simply copy this into your file, make a div element with the id of content, and the firefly effect will appear on that div box.
 
     $.firefly({
         color: '#fff',
         minPixel: 1,
         maxPixel: 3,
         total : 65,
-        on: 'header'
+        on: '#content'
     });
 
 
+## Examples
+
+A basic example of v0.6 is [here][1]
 
 Here are few sites using it. (Please let me know if you are using it, I will add a link here)
 
