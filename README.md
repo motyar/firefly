@@ -38,3 +38,6 @@ Here are few sites using it. (Please let me know if you are using it, I will add
   [1]: https://codepen.io/anon/pen/mWvWvX/
   [2]: http://www.yootheme.com/demo/wordpress/radiance
   [3]: http://www.backslash.gr/content/blog/webdevelopment/10-jquery-firefly-plugin
+  
+## Buy me half of a coffee if you like!
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](http://paypal.me/motyar/)
