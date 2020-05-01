@@ -1,6 +1,9 @@
 # Jquery Firefly
 JQuery Firefly is a simple to use JQuery plugin that adds basic firefly functionality. Simply load it, and add a couple lines of code, and you have a working firefly effect.
 
+## Hire me to install this on your website
+[@motyar](https://twitter.com/motyar/)
+
 ## Changelog
 
 0.7 Improvements:
